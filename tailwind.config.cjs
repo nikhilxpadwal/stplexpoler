@@ -9,7 +9,9 @@ module.exports = {
       'textp': '#767676',
       'accent':'#E4E4E4',
     },
-    
+    fontFamily: {
+      'urban': ['Urbanist'],
+    }
     
   },
   plugins: []
