@@ -1,18 +1,21 @@
 <script>
  import { Swiper, SwiperSlide } from "swiper/svelte";
  import "swiper/css";
+ import Time from "svelte-time";
  import { Mousewheel, Pagination } from "swiper";
+
 </script>
 <div class="container mx-auto maindesktop  mt-38">
     <nav class="px-2 sm:px-4 py-0 dark:bg-gray-900   w-full dark:border-gray-600">
         <div class="container px-3 flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center py-4">
-            <img src="Controls.svg" class=" h-6 mr-3 sm:h-3 " alt="Shubhchintak">
-            <img src="desicon.svg" class=" h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo">
-            <img src="arrow.svg" class=" h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo">
+            <img src="Controls.svg" class="mobicon h-6 mr-3 sm:h-3 " alt="Shubhchintak">
+            <img src="desicon.svg" class="mobicon h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo">
+            <img src="arrow.svg" class="mobicon h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo">
+            
         </a>
         <div>
-            <img src="Field.svg" class="h-6 mr-3 sm:h-8" />
+            <img src="Field.svg" class="mobicon h-6 mr-3 sm:h-8" />
         </div>
         <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
             <img src="addnew.svg"  class=" h-6 mr-3 sm:h-4 "/>
@@ -20,6 +23,7 @@
         </div>
       </nav>
       <div class="maincontent mx-1 my-1 rounded max-h-[80vh] overflow-scroll">
+
         <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -61,8 +65,22 @@ border-radius: 8.865px;
     .maincontent
     {
         background: linear-gradient(97.36deg, #18A0FB 4.4%, rgba(255, 255, 255, 0) 107.69%);
-        
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
     }
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
     .bgcard:hover
     {
         background: rgba(255, 255, 255, 0.2);
