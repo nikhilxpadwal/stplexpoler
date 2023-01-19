@@ -382,7 +382,7 @@ import Saos from "saos"
         </div> 
     </Saos> 
     </SwiperSlide>
-    <SwiperSlide class="flex flex-col">
+    <SwiperSlide class="flex flex-col justify-center items-center">
     <Saos>
         <div class="container mx-auto p-10 lg:p-10 flex flex-col lg:flex-row gap-5 text-center mt-0 mb-0 lg:mt-20 lg:mb-20 justify-center">
             <div class="flex flex-col fade-in-image  w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcards  ">
