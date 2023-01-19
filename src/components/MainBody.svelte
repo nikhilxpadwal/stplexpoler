@@ -57,7 +57,7 @@ import { fade,fly } from "svelte/transition";
         <div class="container mx-auto  flex flex-col lg:flex-row gap-2 text-center items-center  justify-center">
             <div class="flex flex-col justify-center gap-5 w-[100%] lg:w-[50%]">
                 
-                <img src="mobmob.svg" class=" h-[400px] lg:h-[0px] " in:fly="{{ y: 200, duration: 2000 }}" out:fade/>
+                <img src="mobmob.svg" class=" h-[400px] lg:h-[0px] " />
                 
             </div>
             <div class="flex flex-col px-8 mb-10 gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center">
@@ -249,14 +249,14 @@ import { fade,fly } from "svelte/transition";
         modules={[Mousewheel, Pagination]}
         class="mySwiper "
       >
-      <SwiperSlide>
+      <SwiperSlide class="flex">
             <div  class="container mx-auto px-5 lg:px-20 flex flex-col lg:flex-row gap-5 text-center items-center  justify-center">
                 <div  id="home" class="flex flex-col justify-center gap-5 w-[100%] lg:w-[50%]">
                     <img src="mobile.svg" class=" h-[0px] lg:h-[500px] animateds bounceInUp" />
                     <img src="mobmob.svg" class=" h-[400px] lg:h-[0px]" />
                 </div>
                 <div class="flex flex-col gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center">
-                    <h1 class="fade-in-image text-3xl lg:text-5xl font-bold  leading-tight">Headline  <span class="text-accent"> of  Modern  and Digital</span> Lending Platform Seconds</h1>
+                    <h1 class="fade-in-image text-3xl lg:text-4xl font-bold  leading-tight">Headline  <span class="text-accent"> of  Modern  and Digital</span> Lending Platform Seconds</h1>
                     <p  class="fade-in-image text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
                     <div class="space-x-3 py-3">
                         <button class="bg-accent text-secondary px-5 py-2.5  rounded-full">Get Started</button>
@@ -265,7 +265,7 @@ import { fade,fly } from "svelte/transition";
                 </div>
             </div>  
        </SwiperSlide>  
-       <SwiperSlide>
+       <SwiperSlide class="flex">
         <div class="container mx-auto flex flex-col lg:flex-row gap-5 text-center items-center  justify-center">
             
             <div class="flex flex-col pl-10 gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center">
@@ -353,7 +353,7 @@ import { fade,fly } from "svelte/transition";
         </div>  
     </SwiperSlide>
 
-    <SwiperSlide>
+    <SwiperSlide class="flex">
         <div id="about" class="container mx-auto  flex flex-col lg:items-center lg:flex-row gap-5 text-center lg:min-h-fit justify-center">
             <div class="flex flex-col  p-10 lg:pl-20 gap-5 w-[100%] lg:w-[50%]  text-left justify-center">
                 <h1 class="text-2xl font-urban font-semibold leading-tight">About </h1>
@@ -374,7 +374,7 @@ import { fade,fly } from "svelte/transition";
             </div>
         </div>  
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide class="flex flex-col">
         <div class="container mx-auto p-10 lg:p-10 flex flex-col lg:flex-row gap-5 text-center mt-0 mb-0 lg:mt-20 lg:mb-20 justify-center">
             <div class="flex flex-col w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcards  ">
                 <img src="mission.svg" class="h-[100px]" />
@@ -388,7 +388,7 @@ import { fade,fly } from "svelte/transition";
             </div>
         </div>
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide class="flex">
         <div  class="flex flex-col items-center" >
             <div class="space-x-3 py-5">
             <label class="flex gap-2 font-urban bg-secondary text-accent text-sm  px-5 py-2 rounded-full"><img src="Star.svg" />Methodology</label>
@@ -396,7 +396,7 @@ import { fade,fly } from "svelte/transition";
             <img src="map.svg"  class="h-[0px] lg:h-[400px]" />
         </div>
     </SwiperSlide>
-    <SwiperSlide id="services">
+    <SwiperSlide class="flex" id="services">
         <div  class="container mx-auto flex flex-col gap-5 items-center  lg:mt-5 lg:mb-20  justify-center">
             <div class="text-center p-2 lg:px-10 space-y-2 ">
                 <h1 class="text-3xl lg:text-5xl font-semibold">The Headline for UI/UX Design</h1>
@@ -410,7 +410,7 @@ import { fade,fly } from "svelte/transition";
         </div>
     </SwiperSlide>
 
-    <SwiperSlide>
+    <SwiperSlide class="flex">
         <div class="container mx-auto flex flex-col lg:flex-row gap-5 text-center lg:h-[80vh] justify-center">
             <div class="flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
                 
@@ -428,20 +428,20 @@ import { fade,fly } from "svelte/transition";
         </div>  
     </SwiperSlide>
 
-    <SwiperSlide>
+    <SwiperSlide class="flex ">
         <h1 class="text-3xl lg:text-5xl text-center font-semibold py-5">The Headline for Mobile App Development</h1>
         <div class="container mx-auto flex flex-col lg:flex-row gap-0 lg:gap-2 text-center py-5 lg:py-10 lg:h-[80vh] justify-center">
-            <div class="flex flex-col lg:pl-20 gap-5 w-[100%] lg:w-[25%] lg:text-left items-center lg:items-start justify-center">
+            <div class=" lg:pl-20 gap-5 w-[100%] lg:w-[25%] lg:text-left items-center lg:items-start justify-center">
                 <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
                 <div class="space-x-3 ">
                     <button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full">Get Started</button>
                 </div>
             </div>
-            <div class="flex flex-col  w-[100%] lg:w-[50%]">
+            <div class="  w-[100%] lg:w-[50%]">
                 <img src="services.svg" class="h-[500px] " />
                 
             </div>
-            <div class="flex flex-col  w-[100%] lg:w-[25%] lg:text-left justify-center">
+            <div class="  w-[100%] lg:w-[25%] lg:text-left ">
                 <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
             </div>
         </div>  
@@ -459,8 +459,8 @@ border-radius: 8.865px;
     }
     .maincontent
     {
-        background: linear-gradient(97.36deg, #18A0FB 4.4%, #EEC0C6 107.69%);
-        animation: gradient 15s ease infinite;
+        background: linear-gradient(40deg, #1c92d2 10.4%, #f2fcfe 107.69%);
+        animation: gradient 8s ease infinite;
         background-size: 400% 400%;
     }
 
@@ -527,26 +527,12 @@ border-radius: 15px;
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.slide-right { animation: slideRight 3s; }
-@keyframes slideRight
-{
-    from, to { transform: scale(1, 1); }
-    0%
-    {
-        transform:translateY(250px) ;
-    }
-    
-    100%{
-        transform:translateY(0);
-       
-    }
-}
 
 
 .animateds {
             
-            -webkit-animation-duration: 6s;
-            animation-duration: 6s;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
          }
@@ -575,13 +561,13 @@ border-radius: 15px;
             }
             60% {
                opacity: 1;
-               transform: translateY(-30px);
+               transform: translateY(-5px);
             }
             80% {
                transform: translateY(10px);
             }
             100% {
-               transform: translateY(0);
+               transform: translateY(5px);
             }
          }
          
