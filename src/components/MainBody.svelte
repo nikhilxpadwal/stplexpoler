@@ -203,7 +203,7 @@ import Saos from "saos"
                 </div>
             </div>
             <div class="flex flex-col justify-center  w-[100%] lg:w-[50%]">
-                <img src="servicepro.svg" class="h-[400px] lg:h-[500px] rotate" />
+                <img src="servicepro.png" class="h-[400px] lg:h-[500px] rotate" />
                 <img src="service.svg" class="h-[150px] lg:h-[500px] absolute left-40 right-40" />
                 
             </div>
@@ -249,7 +249,7 @@ import Saos from "saos"
         modules={[Mousewheel, Pagination]}
         class="mySwiper "
       >
-      <SwiperSlide class="flex">
+      <SwiperSlide class="flex justify-center items-center">
         <Saos>
             <div  class="container mx-auto px-5 lg:px-20 flex flex-col lg:flex-row gap-5 text-center items-center  justify-center">
                 <div  id="home" class="flex flex-col justify-center gap-5 w-[100%] lg:w-[50%]">
@@ -267,7 +267,7 @@ import Saos from "saos"
             </div>
         </Saos>  
        </SwiperSlide>  
-       <SwiperSlide class="flex">
+       <SwiperSlide class="flex justify-center items-center">
         <Saos>
         <div class="container mx-auto flex flex-col lg:flex-row gap-5 text-center items-center  justify-center">
             
@@ -359,7 +359,7 @@ import Saos from "saos"
     </Saos>
     </SwiperSlide>
 
-    <SwiperSlide class="flex">
+    <SwiperSlide class="flex justify-center items-center">
     <Saos>
         <div id="about" class="container mx-auto  flex flex-col lg:items-center lg:flex-row gap-5 text-center lg:min-h-fit justify-center">
             <div class="flex flex-col  p-10 lg:pl-20 gap-5 w-[100%] lg:w-[50%]  text-left justify-center">
@@ -398,7 +398,7 @@ import Saos from "saos"
         </div>
     </Saos>
     </SwiperSlide>
-    <SwiperSlide class="flex flex-col justify-center">
+    <SwiperSlide class="flex flex-col justify-center items-center">
     <Saos>
         <div  class="flex flex-col items-center  " >
             <div class="space-x-3 py-5 fade-in-image">
@@ -409,7 +409,7 @@ import Saos from "saos"
 
     </Saos>
     </SwiperSlide>
-    <SwiperSlide class="flex justify-center" id="services">
+    <SwiperSlide class="flex justify-center items-center" id="services">
     <Saos>
         <div  class="container mx-auto flex flex-col gap-5 items-center  lg:mt-5 lg:mb-20  justify-center">
             <div class="text-center p-2 lg:px-10 space-y-2 fade-in-image">
@@ -425,7 +425,7 @@ import Saos from "saos"
     </Saos>
     </SwiperSlide>
 
-    <SwiperSlide class="flex">
+    <SwiperSlide class="flex justify-center items-center">
     <Saos>
         <div class="container mx-auto flex flex-col lg:flex-row gap-5 text-center lg:h-[80vh] justify-center">
             <div class="fade-in-image flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
@@ -447,7 +447,7 @@ import Saos from "saos"
 
     <SwiperSlide >
     <Saos>
-        <div class="flex flex-col">
+        <div class="flex flex-col justify-center items-center">
         <h1 class="fade-in-image text-3xl lg:text-5xl text-center font-semibold py-5">The Headline for Mobile App Development</h1>
         <div class="container mx-auto flex flex-col lg:flex-row gap-0 lg:gap-2 text-center py-5 lg:py-10 lg:h-[80vh] justify-center">
             
