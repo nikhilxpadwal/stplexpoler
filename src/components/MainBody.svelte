@@ -290,8 +290,7 @@ import Saos from "saos"
                 </div>
             </div>
             <div class="flex flex-col pl-10  justify-center gap-5 w-[100%] lg:w-[50%]">
-                <img src="desktop.svg" class="pt-10 h-[0px] lg:h-[520px] animateds bounceInUp" />
-                <img src="mobmob.svg" class=" h-[400px] lg:h-[0px]" />
+                <img src="desktop.svg" class="pt-10 h-[0px] lg:h-[100%] animateds bounceInUp" />
             </div>
         </div>  
     </Saos>
@@ -385,7 +384,7 @@ import Saos from "saos"
                 </div>
             </div>
             <div class="flex flex-col p-0 justify-center w-[100%] lg:w-[50%]">
-                <img src="about.svg" class="h-[0px] lg:h-[530px] animateds bounceInUp" />
+                <img src="about.svg" class="h-[0px] lg:h-[900px] animateds bounceInUp" />
             </div>
         </div> 
     </Saos> 
