@@ -459,7 +459,7 @@ border-radius: 8.865px;
     }
     .maincontent
     {
-        background: linear-gradient(40deg, #1c92d2 10.4%, #f2fcfe 107.69%);
+        background: linear-gradient(40deg, #1c92d2 1.4%, #f2fcfe 107.69%);
         animation: gradient 8s ease infinite;
         background-size: 400% 400%;
     }
