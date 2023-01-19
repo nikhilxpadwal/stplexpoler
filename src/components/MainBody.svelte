@@ -55,12 +55,13 @@ import Saos from "saos"
       <!--Mobile View-->
       <div class="maincontent mx-1 my-1 desktopicon rounded overflow-scroll">
         <div class="container mx-auto  flex flex-col lg:flex-row gap-2 text-center items-center  justify-center">
+            <Saos>
             <div class="flex flex-col justify-center gap-5 w-[100%] lg:w-[50%]">
                 
-                <img src="mobmob.svg" class=" h-[400px] lg:h-[0px] " />
+                <img src="mobmob.svg" class=" h-[400px] lg:h-[0px] animateds bounceInUp" />
                 
             </div>
-            <div class="flex flex-col px-8 mb-10 gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center">
+            <div class="fade-in-image flex flex-col px-8 mb-10 gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center">
                 <h1 class="text-3xl lg:text-5xl font-bold  leading-tight">Headline  <span class="text-accent"> of  Modern  and Digital</span> Lending Platform Seconds</h1>
                 <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
                 <div class="space-x-3 py-3">
@@ -68,8 +69,9 @@ import Saos from "saos"
                     <button class="bg-accent text-secondary px-5 py-2.5  rounded-full">Learn More</button>
                 </div>
             </div>
-
-            <div class="flex flex-col px-8 gap-5 w-[100%] lg:w-[50%] text-left lg:text-left justify-center">
+        </Saos>
+    <Saos>
+            <div class="fade-in-image flex flex-col px-8 gap-5 w-[100%] lg:w-[50%] text-left lg:text-left justify-center">
                 <div class="space-x-3 ">
                     <button class="flex gap-2 bg-secondary text-accent text-sm  px-5 py-2 rounded-full"><img src="Star.svg" />ABOUT US </button>
                 </div>
@@ -81,10 +83,10 @@ import Saos from "saos"
                 
             </div>
             <div class="flex flex-col items-end w-[100%] lg:w-[50%]">
-                <img src="2.svg" class="-mt-0 h-[500px] pl-20 lg:h-[0px]" />
+                <img src="2.svg" class="-mt-0 h-[500px] pl-20 lg:h-[0px] animateds bounceInUp" />
             </div>
-
-           
+        </Saos>    
+        <Saos>   
 
             <div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
                 <img src="desktop.svg"  />
@@ -97,7 +99,7 @@ import Saos from "saos"
             </div>
             <div class="flex flex-col p-5  gap-2 w-[100%] lg:w-[60%] text-left justify-center">
                 <div class="flex flex-col lg:flex-row gap-2">
-                <div class="bgcards cursor-pointer p-5    space-y-3 w-[100%] lg:w-[50%]">
+                <div class="fade-in-image bgcards cursor-pointer p-5    space-y-3 w-[100%] lg:w-[50%]">
                     <h1 class="text-xl font-bold  leading-tight">UI/UX </h1>
                     <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy</p>
                     <div class="space-x-1 flex">
@@ -111,7 +113,7 @@ import Saos from "saos"
                 <div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
                     <img src="desktop.svg"  />
                 </div>
-                <div  class="bgcards cursor-pointer p-5   space-y-3 w-[100%] lg:w-[50%]">
+                <div  class="fade-in-image bgcards cursor-pointer p-5   space-y-3 w-[100%] lg:w-[50%]">
                     <h1 class="text-xl font-bold  leading-tight">UI/UX </h1>
                     <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy</p>
                     <div class="space-x-1 flex">
@@ -133,7 +135,7 @@ import Saos from "saos"
                 <img src="image6.svg" class="h-20" />
             </div>
             <div class="flex flex-col lg:flex-row gap-2 ">
-                <div  class="bgcards cursor-pointer p-5 space-y-3 w-[100%] lg:w-[50%]">
+                <div  class="fade-in-image bgcards cursor-pointer p-5 space-y-3 w-[100%] lg:w-[50%]">
                     <h1 class="text-xl font-bold  leading-tight">UI/UX </h1>
                     <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy</p>
                     <div class="space-x-1 flex">
@@ -153,7 +155,7 @@ import Saos from "saos"
                     <img src="image5.svg" class="h-20" />
                     <img src="image6.svg" class="h-20" />
                 </div>
-                <div  class="bgcards cursor-pointer p-5  space-y-3 w-[100%] lg:w-[50%]">
+                <div  class="fade-in-image bgcards cursor-pointer p-5  space-y-3 w-[100%] lg:w-[50%]">
                     <h1 class="text-xl font-bold  leading-tight">UI/UX </h1>
                     <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy</p>
                     <div class="space-x-1 flex">
@@ -165,8 +167,9 @@ import Saos from "saos"
                 </div>
             </div>    
             </div>
-            
-            <div class="flex flex-col  p-10 lg:pl-20 gap-5 w-[100%] lg:w-[50%]  text-left justify-center">
+        </Saos>
+        <Saos>    
+            <div class="fade-in-image flex flex-col  p-10 lg:pl-20 gap-5 w-[100%] lg:w-[50%]  text-left justify-center">
                 <h1 class="text-2xl font-urban font-semibold leading-tight">About </h1>
                 <p  class="text-primary ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process Gorgeous, high-quality design system for mobile, tablet & desktop devices a few reasons digital</p>
                 <div class="flex flex-col  lg:flex-row space-y-3 lg:space-x-3 ">
@@ -181,20 +184,22 @@ import Saos from "saos"
                 </div>
             </div>
             <div class="flex flex-col p-0 justify-center w-[100%] lg:w-[50%]">
-                <img src="about.svg" class="h-[0px] lg:h-[530px]" />
+                <img src="about.svg" class="h-[0px] lg:h-[530px] animateds bounceInUp" />
             </div>
-
-            <div class="text-center p-2 lg:px-10 space-y-2 ">
+        </Saos>   
+    <Saos> 
+            <div class="fade-in-image text-center p-2 lg:px-10 space-y-2 ">
                 <h1 class="text-3xl lg:text-5xl font-semibold">The Headline for UI/UX Design</h1>
                 <p>Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to <br>streamline the lending process nowadays, it isn’t uncommon to see lenders rapidly</p>
                 <button class=" gap-3 bg-accent text-sm text-secondary  px-5 py-2.5 rounded-full ">Get Started</button>
             </div>
             <div class="text-center p-2 lg:px-10 ">
                 <img src="pro.svg" class="h-[500px] lg:h-[0px]" />
-                <img src="object.svg" class="h-[0px] lg:h-[250px]" />
+                <img src="object.svg" class="h-[0px] lg:h-[250px] animateds bounceInUp" />
             </div>
-
-            <div class="flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
+        </Saos>  
+    <Saos>  
+            <div class="fade-in-image flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
                 
                 <h1 class="text-3xl lg:text-5xl font-semibold ">The Headline for Mobile App Development</h1>
                 <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
@@ -202,13 +207,14 @@ import Saos from "saos"
                     <button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full">Get Started</button>
                 </div>
             </div>
-            <div class="flex flex-col justify-center  w-[100%] lg:w-[50%]">
-                <img src="servicepro.png" class="h-[400px] lg:h-[500px] rotate" />
-                <img src="service.svg" class="h-[150px] lg:h-[500px] absolute left-40 right-40" />
+            <div class="flex flex-col justify-center items-center w-[100%] lg:w-[50%]">
+                <img src="servicepro.png" class="h-[300px] w-[300px] lg:w-100 lg:h-[500px] rotate" />
+                <img src="service.svg" class="h-[150px] lg:h-[500px] absolute left-[36%] right-[50%]" />
                 
             </div>
-
-            <div class="flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
+        </Saos> 
+    <Saos>   
+            <div class="fade-in-image flex flex-col p-5 lg:pl-20 gap-5 w-[100%] lg:w-[50%] lg:text-left items-center lg:items-start justify-center">
                 
                 <h1 class="text-3xl lg:text-5xl font-semibold ">The Headline for Mobile App Development</h1>
                 <p  class=" text-textp ">Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the lending process</p>
@@ -216,10 +222,12 @@ import Saos from "saos"
                     <button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full">Get Started</button>
                 </div>
             </div>
+        </Saos> 
+        <Saos> 
             <div class="flex flex-col justify-center  w-[100%] lg:w-[50%]">
-                <img src="services.svg" class="h-[400px] lg:h-[500px] " />
+                <img src="services.svg" class="h-[400px] lg:h-[500px] fade-in-image" />
             </div>
-
+        </Saos>    
         </div>  
       </div>
 
