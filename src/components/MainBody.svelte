@@ -43,7 +43,7 @@
 				
 			</a>
 			<div>
-				<img src="Field.svg" class="mobicon h-6 mr-3 sm:h-8" /><img src="Stack.svg" class=" h-3 mr-3 sm:h-4 " />
+				<img src="Field.svg" class="mobicon h-6 mr-3 sm:h-8" /><img src="Stack.svg" class="lg:hidden h-3 mr-3 sm:h-4 " />
 			</div>
 			<div
 				class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1"
@@ -55,7 +55,7 @@
 		</div>
 	</nav>
 	<!--Mobile View-->
-	<div class="maincontent mx-1 my-1 desktopicon rounded overflow-scroll">
+	<div class="lg:hidden maincontent mx-1 my-1 desktopicon rounded overflow-scroll">
 		<div
 			class="container mx-auto  flex flex-col lg:flex-row gap-2 text-center items-center  justify-center"
 		>
@@ -804,7 +804,7 @@
 
 	@media (min-width: 1280px) {
 		.desktopicon {
-			display: none;
+			display: none !important;
 		}
 	}
 
