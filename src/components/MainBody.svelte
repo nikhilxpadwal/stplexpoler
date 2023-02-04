@@ -14,6 +14,14 @@
 		selectedUIOption = option;
 	}
 
+/*  */
+	let selectedUIOptions = 0;
+
+	function onClickHandlers(options) {
+		selectedUIOptions = options;
+	}
+/* END  */
+
 	onMount(() => {
 		function getDateTime() {
 			var now = new Date();
@@ -451,7 +459,7 @@
 					>
 						{#if selectedUIOption === 0}
 							<div id="div1" class="flex  lg:flex-col justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/photoshop.png" class="h-28 w-100" />
+								<img src="buttons/photoshop.png" class="h-28 w-100 p-0 hover:shadow hover:shadow-[#50d71e]/100" />
 								<img src="buttons/xd.png" class="h-28 w-100" />
 								<img src="buttons/ps.png" class="h-28 w-100" />
 								<img src="buttons/ai.png" class="h-28 w-100" />
@@ -507,19 +515,19 @@
 									</p>
 									<div class="space-x-1 flex flex-wrap">
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Headline</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Text</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>lable</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>post</button
 										>
 									</div>
@@ -538,19 +546,19 @@
 									</p>
 									<div class="space-x-1 flex flex-wrap">
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Headline</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Text</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>lable</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>post</button
 										>
 									</div>
@@ -570,19 +578,19 @@
 									</p>
 									<div class="space-x-1 flex flex-wrap">
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Headline</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Text</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>lable</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>post</button
 										>
 									</div>
@@ -601,19 +609,19 @@
 									</p>
 									<div class="space-x-1  flex flex-wrap ">
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Headline</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>Text</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>lable</button
 										>
 										<button
-											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
+											class="flex gap-3 bg-accent text-xs text-secondary  px-4 py-2.5 mb-1 rounded-full uppercase"
 											>post</button
 										>
 									</div>
@@ -655,7 +663,7 @@
 							</div>
 						</div>
 						<div class="flex flex-col p-0 justify-center w-[100%] lg:w-[50%]">
-							<img src="about.svg" class="h-[0px] lg:h-[680px] animateds bounceInUp" />
+							<img src="about.svg" class="h-[0px] lg:h-[580px] animateds bounceInUp" />
 						</div>
 					</div>
 				</Saos>
@@ -665,8 +673,10 @@
 					<div
 						class="container mx-auto p-10 lg:p-10 flex flex-col lg:flex-row gap-5 text-center mt-0 mb-0 lg:mt-20 lg:mb-20 justify-center"
 					>
-						<div
-							class="flex flex-col fade-in-image  w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcards  "
+						<div on:click={() => onClickHandlers(0)}
+							class="{selectedUIOptions === 0
+								? 'card-active'
+								: ''} flex flex-col fade-in-image  w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcard  "
 						>
 							<img src="mission.svg" class="h-[100px] " />
 							<h1 class="text-2xl font-urban font-semibold">Mission</h1>
@@ -675,8 +685,10 @@
 								strategy to streamline the lending process
 							</p>
 						</div>
-						<div
-							class="flex flex-col fade-in-image  w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcard  opacity-20 hover:opacity-100"
+						<div on:click={() => onClickHandlers(1)}
+							class="{selectedUIOptions === 1
+								? 'card-active'
+								: ''} flex flex-col fade-in-image  w-[100%] lg:w-[30%] text-center p-5 lg:p-10 bgcard  opacity-20 hover:opacity-100"
 						>
 							<img src="vision.svg" class="h-[100px] " />
 							<h1 class="text-2xl font-urban font-semibold">Vision</h1>
@@ -884,25 +896,28 @@
 	}
 
 	.animateds {
-		-webkit-animation-duration: 3s;
-		animation-duration: 3s;
+		-webkit-animation-duration: 1.5s;
+		animation-duration: 1.5s;
 		-webkit-animation-fill-mode: both;
 		animation-fill-mode: both;
 	}
 
 	@-webkit-keyframes bounceInUp {
-		0% {
+		30% {
+			
 			opacity: 0;
-			-webkit-transform: translateY(2000px);
+			-webkit-transform: translateY(1000px);
 		}
 		60% {
-			opacity: 1;
-			-webkit-transform: translateY(-30px);
+			opacity: 0;
+			-webkit-transform: translateY(-10px);
 		}
 		80% {
+			
 			-webkit-transform: translateY(10px);
 		}
 		100% {
+			
 			-webkit-transform: translateY(0);
 		}
 	}
@@ -910,13 +925,14 @@
 	@keyframes bounceInUp {
 		0% {
 			opacity: 0;
-			transform: translateY(2000px);
+			transform: translateY(1000px);
 		}
 		60% {
-			opacity: 1;
+			opacity: 0;
 			transform: translateY(-5px);
 		}
 		80% {
+			
 			transform: translateY(10px);
 		}
 		100% {
