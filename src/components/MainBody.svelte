@@ -8,6 +8,12 @@
 	import jQuery from 'jquery';
 	import Saos from 'saos';
 
+	let selectedUIOption = 0;
+
+	function onClickHandler(option) {
+		selectedUIOption = option;
+	}
+
 	onMount(() => {
 		function getDateTime() {
 			var now = new Date();
@@ -40,17 +46,18 @@
 				<img src="desicon.svg" class="mobicon h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo" />
 				<img src="arrow.svg" class="mobicon h-6 mr-3 sm:h-4 " alt="Shubhchintak Logo" />
 				<div id="digital-clock" class="lg:hidden text-sm font-urban font-bold" />
-				
 			</a>
 			<div>
-				<img src="Field.svg" class="mobicon h-6 mr-3 sm:h-8" /><img src="Stack.svg" class="lg:hidden h-3 mr-3 sm:h-4 " />
+				<img src="Field.svg" class="mobicon h-6 mr-3 sm:h-8" /><img
+					src="Stack.svg"
+					class="lg:hidden h-3 mr-3 sm:h-4 "
+				/>
 			</div>
 			<div
 				class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1"
 				id="navbar-sticky"
 			>
 				<img src="addnew.svg" class="mobicon h-6 mr-3 sm:h-4 " />
-				
 			</div>
 		</div>
 	</nav>
@@ -101,7 +108,6 @@
 						>
 					</div>
 				</div>
-				
 			</Saos>
 			<Saos>
 				<div class="flex flex-col py-3 px-5 justify-center w-[100%] lg:w-[30%]">
@@ -150,7 +156,9 @@
 							<img src="image5.svg" class="h-20" />
 							<img src="image6.svg" class="h-20" />
 						</div>
-						<div class="fade-in-image py-3 bgcards cursor-pointer p-5   space-y-3 w-[100%] lg:w-[50%]">
+						<div
+							class="fade-in-image py-3 bgcards cursor-pointer p-5   space-y-3 w-[100%] lg:w-[50%]"
+						>
 							<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
 							<p class=" text-textp ">
 								Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
@@ -222,7 +230,9 @@
 							<img src="image5.svg" class="h-20" />
 							<img src="image6.svg" class="h-20" />
 						</div>
-						<div class="fade-in-image py-3 bgcards cursor-pointer p-5  space-y-3 w-[100%] lg:w-[50%]">
+						<div
+							class="fade-in-image py-3 bgcards cursor-pointer p-5  space-y-3 w-[100%] lg:w-[50%]"
+						>
 							<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
 							<p class=" text-textp ">
 								Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
@@ -251,7 +261,8 @@
 				</div>
 			</Saos>
 			<Saos>
-				<div id="about"
+				<div
+					id="about"
 					class="fade-in-image flex flex-col  p-10 lg:pl-20 gap-5 w-[100%] lg:w-[50%]  text-left justify-center"
 				>
 					<h1 class="text-2xl font-urban font-semibold leading-tight">About</h1>
@@ -280,15 +291,15 @@
 				</div>
 			</Saos>
 			<Saos>
-			<div class="flex flex-col items-center  ">
-				<div class="space-x-3 py-5 fade-in-image">
-					<label
-						class="flex gap-2 font-urban bg-secondary text-accent text-sm  px-5 py-2 rounded-full"
-						><img src="Star.svg" />Methodology</label
-					>
+				<div class="flex flex-col items-center  ">
+					<div class="space-x-3 py-5 fade-in-image">
+						<label
+							class="flex gap-2 font-urban bg-secondary text-accent text-sm  px-5 py-2 rounded-full"
+							><img src="Star.svg" />Methodology</label
+						>
+					</div>
+					<img src="Frame.svg" class="h-[700px] w-[100%] lg:h-[400px] fade-in-image" />
 				</div>
-				<img src="Frame.svg" class="h-[700px] w-[100%] lg:h-[400px] fade-in-image" />
-			</div>
 			</Saos>
 			<Saos>
 				<div class="fade-in-image text-center p-2 lg:px-10 space-y-2 ">
@@ -325,7 +336,7 @@
 					</div>
 				</div>
 				<div class="flex flex-col justify-center items-center w-[100%] lg:w-[50%]">
-					<img src="servicepro.svg" class="h-[300px] w-[300px] lg:w-100 lg:h-[500px] rotate" />
+					<img src="servicepro.png" class="h-[300px] w-[300px] lg:w-100 lg:h-[500px] rotate" />
 					<img src="service.svg" class="h-[150px] lg:h-[500px] absolute left-[36%] right-[50%]" />
 				</div>
 			</Saos>
@@ -438,31 +449,63 @@
 					<div
 						class="container mx-auto flex flex-col lg:flex-row gap-5 text-center lg:h-[80vh] items-center justify-center"
 					>
-						<div id="div1" class="flex  lg:flex-col justify-center w-[100%] lg:w-[10%]">
-							<img src="image3.svg" class="h-20" />
-							<img src="image4.svg" class="h-20" />
-							<img src="image5.svg" class="h-20" />
-							<img src="image6.svg" class="h-20" />
-						</div>
-						<div id="div2" class="flex hidden lg:flex-col justify-center w-[100%] lg:w-[10%]">
-							<img src="image3.svg" class="h-20" />
-							<img src="image4.svg" class="h-20" />
-						</div>
+						{#if selectedUIOption === 0}
+							<div id="div1" class="flex  lg:flex-col justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/photoshop.png" class="h-28 w-100" />
+								<img src="buttons/xd.png" class="h-28 w-100" />
+								<img src="buttons/ps.png" class="h-28 w-100" />
+								<img src="buttons/ai.png" class="h-28 w-100" />
+							</div>
+							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
+								<img src="desktop.svg" />
+							</div>
+						{/if}
 
-						<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
-							<img src="desktop.svg" />
-						</div>
-						<div class="flex flex-col p-5  gap-2 w-[100%] lg:w-[60%] text-left justify-center">
+						{#if selectedUIOption === 1}
+							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/react.png" class="h-28 w-100" />
+								<img src="buttons/wordpress.png" class="h-28 w-100" />
+							</div>
+							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
+								<img src="desktop.svg" />
+							</div>
+						{/if}
+
+						{#if selectedUIOption === 2}
+							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/dajgo.png" class="h-28 w-100" />
+								<img src="buttons/eye.png" class="h-28 w-100" />
+							</div>
+							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
+								<img src="desktop.svg" />
+							</div>
+						{/if}
+
+						{#if selectedUIOption === 3}
+							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/dajgo.png" class="h-28 w-100" />
+								<img src="buttons/svelte.png" class="h-28 w-100" />
+								<img src="buttons/wordpress.png" class="h-28 w-100" />
+								<img src="buttons/elementor.png" class="h-28 w-100" />
+							</div>
+							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
+								<img src="desktop.svg" />
+							</div>
+						{/if}
+						<div class="flex  flex-col p-5  gap-2 w-[100%] lg:w-[60%] text-left justify-center">
 							<div class="flex flex-col lg:flex-row gap-2">
 								<div
-									class="fade-in-image bgcard card-active cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
+									on:click={() => onClickHandler(0)}
+									class="{selectedUIOption === 0
+										? 'card-active'
+										: ''}  fade-in-image bgcard  cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
 								>
 									<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
 									<p class=" text-textp ">
 										Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
 										strategy
 									</p>
-									<div class="space-x-1 flex">
+									<div class="space-x-1 flex flex-wrap">
 										<button
 											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
 											>Headline</button
@@ -483,14 +526,17 @@
 								</div>
 
 								<div
-									class="fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
+									on:click={() => onClickHandler(1)}
+									class="{selectedUIOption === 1
+										? 'card-active'
+										: ''} fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
 								>
-									<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
+									<h1 class="text-xl font-bold  leading-tight">Mobile App Development</h1>
 									<p class=" text-textp ">
 										Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
 										strategy
 									</p>
-									<div class="space-x-1 flex">
+									<div class="space-x-1 flex flex-wrap">
 										<button
 											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
 											>Headline</button
@@ -512,14 +558,17 @@
 							</div>
 							<div class="flex flex-col lg:flex-row gap-2 ">
 								<div
-									class="fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
+									on:click={() => onClickHandler(2)}
+									class="{selectedUIOption === 2
+										? 'card-active'
+										: ''} fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100   space-y-3 w-[100%] lg:w-[50%]"
 								>
-									<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
+									<h1 class="text-xl font-bold  leading-tight">Website Development</h1>
 									<p class=" text-textp ">
 										Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
 										strategy
 									</p>
-									<div class="space-x-1 flex">
+									<div class="space-x-1 flex flex-wrap">
 										<button
 											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
 											>Headline</button
@@ -540,14 +589,17 @@
 								</div>
 
 								<div
-									class="fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100  space-y-3 w-[100%] lg:w-[50%]"
+									on:click={() => onClickHandler(3)}
+									class="{selectedUIOption === 3
+										? 'card-active'
+										: ''} fade-in-image bgcard cursor-pointer p-5 opacity-20 hover:opacity-100  space-y-3 w-[100%] lg:w-[50%]"
 								>
-									<h1 class="text-xl font-bold  leading-tight">UI/UX</h1>
+									<h1 class="text-xl font-bold  leading-tight">Custom Web Solutions/ERP</h1>
 									<p class=" text-textp ">
 										Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
 										strategy
 									</p>
-									<div class="space-x-1 flex">
+									<div class="space-x-1  flex flex-wrap ">
 										<button
 											class="flex gap-3 bg-accent text-xs text-secondary  px-5 py-2.5 rounded-full uppercase"
 											>Headline</button
@@ -697,14 +749,12 @@
 						<div
 							class="flex flex-col justify-center items-center w-[100%] lg:w-[50%] fade-in-image"
 						>
-							<img src="servicepro.svg" class="h-[400px] lg:h-[450px] lg:w-[450px] rotate " />
+							<img src="servicepro.png" class="h-[400px] lg:h-[450px] lg:w-[450px] rotate " />
 							<img src="mobmob.svg" class="h-[150px] lg:h-[120px] absolute fade-in-image" />
 						</div>
 					</div>
 				</Saos>
 			</SwiperSlide>
-			
-			
 
 			<SwiperSlide>
 				<Saos>
@@ -782,7 +832,7 @@
 		background: rgba(255, 255, 255, 0.2);
 		border: 2px solid #e3e3e3;
 		backdrop-filter: blur(2px);
-        opacity: 1;
+		opacity: 1;
 
 		/* Note: backdrop-filter has minimal browser support */
 		border-radius: 15px;
