@@ -458,11 +458,11 @@
 						class="container mx-auto flex flex-col lg:flex-row gap-5 text-center lg:h-[80vh] items-center justify-center"
 					>
 						{#if selectedUIOption === 0}
-							<div id="div1" class="flex  lg:flex-col justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/photoshop.png" class="h-28 w-100 p-0 hover:shadow hover:shadow-[#50d71e]/100" />
-								<img src="buttons/xd.png" class="h-28 w-100" />
-								<img src="buttons/ps.png" class="h-28 w-100" />
-								<img src="buttons/ai.png" class="h-28 w-100" />
+							<div id="div1" class="flex  lg:flex-col gap-2 p-3 justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/photoshop.png" class="h-24 w-100  hover:shadow-xl hover:shadow-[#50d71e]/90" />
+								<img src="buttons/xd.png" class="h-24 w-100  hover:shadow-xl hover:shadow-[#da9bd6]/90" />
+								<img src="buttons/ps.png" class="h-24 w-100  hover:shadow-xl hover:shadow-[#143150]/90" />
+								<img src="buttons/ai.png" class="h-24 w-100  hover:shadow-xl hover:shadow-[#9b2a36]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -470,9 +470,9 @@
 						{/if}
 
 						{#if selectedUIOption === 1}
-							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/react.png" class="h-28 w-100" />
-								<img src="buttons/wordpress.png" class="h-28 w-100" />
+							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/react.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/wordpress.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -480,9 +480,9 @@
 						{/if}
 
 						{#if selectedUIOption === 2}
-							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/dajgo.png" class="h-28 w-100" />
-								<img src="buttons/eye.png" class="h-28 w-100" />
+							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/dajgo.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#1e8259]/90" />
+								<img src="buttons/eye.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -490,11 +490,11 @@
 						{/if}
 
 						{#if selectedUIOption === 3}
-							<div id="div2" class="flex lg:flex-col justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/dajgo.png" class="h-28 w-100" />
-								<img src="buttons/svelte.png" class="h-28 w-100" />
-								<img src="buttons/wordpress.png" class="h-28 w-100" />
-								<img src="buttons/elementor.png" class="h-28 w-100" />
+							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
+								<img src="buttons/dajgo.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#1e8259]/90" />
+								<img src="buttons/svelte.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#ff7652]/90" />
+								<img src="buttons/wordpress.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/elementor.png" class="h-28 w-100 hover:shadow-xl hover:shadow-[#dc03ac]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
