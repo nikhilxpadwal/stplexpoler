@@ -89,8 +89,8 @@
 						to streamline the lending process
 					</p>
 					<div class="space-x-3 py-3">
-						<button class="bg-accent text-secondary px-5 py-2.5  rounded-full">Get Started</button>
-						<button class="bg-accent text-secondary px-5 py-2.5  rounded-full">Learn More</button>
+						<button class="border border-accent hover:bg-accent hover:text-secondary text-accent px-5 py-2.5  rounded-full">Get Started</button>
+						<button class="border border-accent hover:bg-accent hover:text-secondary text-accent px-5 py-2.5  rounded-full">Learn More</button>
 					</div>
 				</div>
 			</Saos>
@@ -111,7 +111,7 @@
 						to streamline the lending process
 					</p>
 					<div class="space-x-3 py-3">
-						<button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full"
+						<button class="flex gap-3 bg-accent text-secondary px-5 py-2.5 rounded-full"
 							>Explore All <img src="Arrow_Forward.svg" /></button
 						>
 					</div>
@@ -409,10 +409,10 @@
 								strategy to streamline the lending process
 							</p>
 							<div class="space-x-3 py-3 fade-in-image">
-								<button class="bg-accent text-secondary px-5 py-2.5  rounded-full"
+								<button class="border border-accent hover:bg-accent hover:text-secondary text-accent px-5 py-2.5  rounded-full"
 									>Get Started</button
 								>
-								<button class="bg-accent text-secondary px-5 py-2.5  rounded-full"
+								<button class="border border-accent hover:bg-accent hover:text-secondary text-accent px-5 py-2.5  rounded-full"
 									>Learn More</button
 								>
 							</div>
@@ -429,7 +429,7 @@
 							class="flex flex-col pl-10 gap-5 w-[100%] lg:w-[50%] text-center lg:text-left justify-center"
 						>
 							<div class="space-x-3 ">
-								<button class="flex gap-2 bg-secondary text-accent text-sm  px-5 py-2 rounded-full"
+								<button class="flex gap-2 items-center bg-secondary text-accent text-sm  px-5 py-2 rounded-full"
 									><img src="Star.svg" />ABOUT US
 								</button>
 							</div>
@@ -441,7 +441,7 @@
 								strategy to streamline the lending process
 							</p>
 							<div class="fade-in-image space-x-3 py-3">
-								<button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full"
+								<button class="flex gap-3 border border-accent hover:bg-accent hover:text-secondary text-accent  px-5 py-2.5 rounded-full"
 									>Explore All <img src="Arrow_Forward.svg" /></button
 								>
 							</div>
@@ -459,10 +459,10 @@
 					>
 						{#if selectedUIOption === 0}
 							<div id="div1" class="flex  lg:flex-col gap-2 p-3 justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/photoshop.png" class="h-24 w-28  hover:shadow-xl hover:shadow-[#50d71e]/90" />
-								<img src="buttons/xd.png" class="h-24 w-28  hover:shadow-xl hover:shadow-[#da9bd6]/90" />
-								<img src="buttons/ps.png" class="h-24 w-28  hover:shadow-xl hover:shadow-[#143150]/90" />
-								<img src="buttons/ai.png" class="h-24 w-28  hover:shadow-xl hover:shadow-[#9b2a36]/90" />
+								<img src="buttons/photoshop.png" class="h-20 w-20 rounded-lg object-contain hover:shadow-xl hover:shadow-[#50d71e]/90" />
+								<img src="buttons/xd.png" class="h-20 w-20 rounded-lg object-contain hover:shadow-xl hover:shadow-[#da9bd6]/90" />
+								<img src="buttons/ps.png" class="h-20 w-20 rounded-lg object-contain hover:shadow-xl hover:shadow-[#143150]/90" />
+								<img src="buttons/ai.png" class="h-20 w-20 rounded-lg object-contain hover:shadow-xl hover:shadow-[#9b2a36]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -471,8 +471,8 @@
 
 						{#if selectedUIOption === 1}
 							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/react.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
-								<img src="buttons/wordpress.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/react.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/wordpress.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -481,8 +481,8 @@
 
 						{#if selectedUIOption === 2}
 							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/dajgo.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#1e8259]/90" />
-								<img src="buttons/eye.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/dajgo.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#1e8259]/90" />
+								<img src="buttons/eye.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -491,10 +491,10 @@
 
 						{#if selectedUIOption === 3}
 							<div id="div2" class="flex lg:flex-col gap-2 p-3  justify-center w-[100%] lg:w-[10%]">
-								<img src="buttons/dajgo.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#1e8259]/90" />
-								<img src="buttons/svelte.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#ff7652]/90" />
-								<img src="buttons/wordpress.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
-								<img src="buttons/elementor.png" class="h-28 w-28 hover:shadow-xl hover:shadow-[#dc03ac]/90" />
+								<img src="buttons/dajgo.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#1e8259]/90" />
+								<img src="buttons/svelte.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#ff7652]/90" />
+								<img src="buttons/wordpress.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#00e6b2f5]/90" />
+								<img src="buttons/elementor.png" class="h-20 w-20 rounded-lg hover:shadow-xl hover:shadow-[#dc03ac]/90" />
 							</div>
 							<div class="flex flex-col justify-center w-[100%] lg:w-[30%]">
 								<img src="desktop.svg" />
@@ -725,7 +725,7 @@
 								strategy to <br />streamline the lending process nowadays, it isn’t uncommon to see
 								lenders rapidly
 							</p>
-							<button class=" gap-3 bg-accent text-sm text-secondary  px-5 py-2.5 rounded-full "
+							<button class=" gap-3 border border-accent hover:bg-accent hover:text-secondary text-accent text-sm   px-5 py-2.5 rounded-full "
 								>Get Started</button
 							>
 						</div>
@@ -753,7 +753,7 @@
 								strategy to streamline the lending process
 							</p>
 							<div class="space-x-3 ">
-								<button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full"
+								<button class="flex gap-3 border border-accent hover:bg-accent hover:text-secondary text-accent  px-5 py-2.5 rounded-full"
 									>Get Started</button
 								>
 							</div>
@@ -778,14 +778,14 @@
 							class="container mx-auto flex flex-col lg:flex-row gap-0 lg:gap-2 text-center py-5 lg:py-10 lg:h-[80vh] justify-center"
 						>
 							<div
-								class="fade-in-image lg:pl-20 gap-5 w-[100%] lg:w-[25%] lg:text-left   justify-center"
+								class="fade-in-image lg:pl-14 gap-5 w-[100%] lg:w-[25%] lg:text-left   justify-center"
 							>
 								<p class=" text-textp ">
 									Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending
 									strategy to streamline the lending process
 								</p>
 								<div class="space-x-3 ">
-									<button class="flex gap-3 bg-accent text-secondary  px-5 py-2.5 rounded-full"
+									<button class="flex gap-3 border border-accent hover:bg-accent hover:text-secondary text-accent px-5 py-2.5 rounded-full"
 										>Get Started</button
 									>
 								</div>
